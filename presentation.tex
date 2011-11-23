@@ -25,6 +25,17 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{Lisp Dialects}
+  \begin{itemize}
+  \item Common Lisp (gcl)
+  \item Scheme (guile)
+  \item Clojure (JVM)
+  \item AutoLISP (AutoCAD)
+  \item Emacs Lisp (Emacs)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{John McCarthy\\September 4, 1927 -- October 24, 2011}
   \begin{figure}
     \includegraphics[width=0.8\linewidth]{mccarthy.jpg}
@@ -41,7 +52,7 @@
   \item 0, 42, 3.14
   \item ``hello, world!''
   \item foo, car, +
-  \item t
+  \item nil, t
   \end{itemize}
 \end{frame}
 
@@ -84,15 +95,71 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{Cons cell}
+  \begin{figure}
+    \includegraphics[width=0.6\linewidth]{cons.pdf}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{List}
+  \begin{figure}
+    \includegraphics[width=0.6\linewidth]{list-1.pdf}
+  \end{figure}
+  \begin{itemize}
+  \item (cons 1 nil)
+  \item (1 . nil)
+  \item (1)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{List}
+  \begin{figure}
+    \includegraphics[width=0.6\linewidth]{list-2.pdf}
+  \end{figure}
+  \begin{itemize}
+  \item (cons 1 (cons 2 (cons 3 nil)))
+  \item (1 . (2 . (3 . nil)))
+  \item (1 2 3)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{List}
+  \begin{figure}
+    \includegraphics[width=0.6\linewidth]{list-3.pdf}
+  \end{figure}
+  \begin{itemize}
+  \item (cons (cons 1 2) (cons 3 4))
+  \item ((1 . 2) . (3 . 4))
+  \item ((1 . 2) 3 . 4)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{Calling functions}
   \begin{block}{}
-    The most common way of invoking a function in Lisp is by evaluating a list.
+    The most common way of invoking a function in Lisp is by
+    evaluating a list.
   \end{block}
   \begin{itemize}
   \item (+ 2 2)
   \item (* (+ 1 3) 5)
   \item (concat ``a'' ``b'')
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Defining functions}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Defining variables}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Bindings}
 \end{frame}
 
 \end{document}

@@ -12,5 +12,6 @@
 *.pdf
 *.tex
 *.eps
+*.*~
 !presentation.tex
 !pygments.tex
