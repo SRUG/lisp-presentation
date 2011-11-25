@@ -102,7 +102,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{List}
+  \frametitle{List, first example}
   \begin{figure}
     \includegraphics[width=0.6\linewidth]{list-1.pdf}
   \end{figure}
@@ -114,7 +114,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{List}
+  \frametitle{List, second example}
   \begin{figure}
     \includegraphics[width=0.6\linewidth]{list-2.pdf}
   \end{figure}
@@ -126,7 +126,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{List}
+  \frametitle{List, third example}
   \begin{figure}
     \includegraphics[width=0.6\linewidth]{list-3.pdf}
   \end{figure}
@@ -141,7 +141,7 @@
   \frametitle{Calling functions}
   \begin{block}{}
     The most common way of invoking a function in Lisp is by
-    evaluating a list.
+    evaluating a list. Others: funcall, apply, etc.
   \end{block}
   \begin{itemize}
   \item (+ 2 2)
@@ -152,14 +152,54 @@
 
 \begin{frame}
   \frametitle{Defining functions}
+  \begin{itemize}
+  \item anonymous: (lambda (a b) (+ a b))
+  \item named: (defun double (x) (* 2 x))
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Defining variables}
+  \begin{itemize}
+  \item (set 'x 1)
+  \item (setq x 1)
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Bindings}
+  \begin{block}{}
+  A ``binding'' is a relationship of
+  correspondence between a name and a memory location.
+  \end{block}
+  \begin{itemize}
+  \item ((lambda (a b) (...)) 1 3)
+  \item (let (x y z) (...))
+  \item (let ((a 1) (b 2)) (...))
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conditions}
+  \begin{itemize}
+  \item (cond ((= x 0) 1) (t x))
+  \item (if (= x 0) 1 x)
+  \item (unless (> x 0) (print x))
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Collections}
+  \begin{itemize}
+  \item lists: (1 2 3 4 5)
+  \item arrays: [1 2 3 4]
+  \item hashes: (make-hash-table)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Macros}
+  %% loop
 \end{frame}
 
 \end{document}
