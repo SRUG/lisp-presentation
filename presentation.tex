@@ -198,6 +198,15 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{Map, reduce}
+  \begin{itemize}
+  \item (mapcar (lambda (x) (* x 2)) '(1 2 3 4 5))
+  \item (reduce (lambda (acc x) (+ acc x)) [1 2 3 4 5])
+  \item (reduce #'+ [1 2 3 4 5])
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{Macros}
   \begin{block}{}
   Macros are programs that generate programs.
@@ -218,9 +227,8 @@
 \begin{frame}
   \frametitle{Questions?}
   \begin{center}
-  CAN HAS QUESTIONS?
+  CAN HAS QUESTION?
   \end{center}
 \end{frame}
 
 \end{document}
-
